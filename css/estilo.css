@@ -1,0 +1,479 @@
+/* tipografia  */
+
+@font-face {
+    font-family: taylor letra;
+    src: url(../resources/imagenes/tipo/Taylor\ Hand.otf);
+}
+
+/* copiar y pegar en los otros para que se quede la tipografia */
+
+h1 {
+    color: rgb(131, 95, 42);
+    background-color: beige;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h2 {
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 50px;
+    font-family: taylor letra;
+    letter-spacing: normal;
+
+
+}
+
+/* selector tipo clase */
+
+.folklore {
+    color: grey;
+    background-color: rgb(94, 56, 11);
+    border-radius: 8px;
+    font-family: taylor letra;
+
+}
+
+/* selector tipo id */
+/* el id NO es reutilizable */
+#taytay {
+    font-size: 50px;
+    font-family: taylor letra;
+
+}
+
+.bordes {
+    border-radius: 8px;
+}
+
+/* MENU DE NAVEGACION */
+
+
+
+/* sacar vinetas */
+.navegacion ul li {
+    list-style-type: none;
+
+}
+
+/* con el comando a estoy especificando el color y siempre dejar espacio. */
+.navegacion a {
+    color: white;
+    font-family: serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-decoration: none;
+    /* decoracion del menu */
+}
+
+.fondo-texto {
+    background-image: url("https://i.pinimg.com/originals/ef/53/16/ef53169a9822d1618d4ce77ff9363a3b.jpg")
+}
+
+/* con poner p aplicas a todos los texto el borde */
+
+/* borde texto / contenido de album */
+.borde-texto p {
+    border: solid 2px rgb(170, 131, 131);
+    display: block;
+    background-size: contain;
+    /* comando widht para poner enu un lado */
+    width: 800px;
+    /* para poner un alto del texto usar el comando height */
+    display: block;
+
+
+}
+
+/* para poner borde a los enlaces */
+
+
+
+
+/* para acomodar sin necesidad de br */
+.formulario input {
+
+    display: block;
+}
+
+/* propiedad overflow */
+
+.borde-texto .overflow {
+    height: 50px;
+    width: 250px;
+    overflow: hidden;
+
+
+
+}
+
+.formulario {
+    display: block;
+
+}
+
+
+/* ----------------GALERIA---------- */
+.gif-redondo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+/* ----------------main index todas van a tener main---------------------*/
+
+
+/* poner flex box */
+
+
+
+
+/* wrap para meter todo en una gran columna, para ver uno arriba de otro (stackeado) */
+
+
+
+
+
+
+
+/* SHOP TIENDA TAYLOR */
+
+
+.taylor_shop {
+    display: flex;
+    /*siempre poner display flex  */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* min-height: 600px; */
+
+
+
+}
+
+/* desordenar para volver a ordenar */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px 2px maroon;
+    padding-bottom: 10px;
+    margin: 20px;
+    font-family: sans-serif;
+    /* margin para separar las cartas */
+
+
+
+
+}
+
+.producto img {
+    width: 230px;
+
+
+}
+
+/* poner img al lado para modificar, con una propiedad */
+
+.producto button {
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: maroon;
+    color: white;
+
+}
+
+.button2 {
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: maroon;
+    color: white;
+
+}
+
+/* modificar el boton de compra/entrada */
+
+
+/* -----------BOTON FIJO--------- */
+
+
+/* ropa/grids */
+.tay_merch {
+    /* border: maroon solid 3px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* repeat para simplificar */
+    /* grid-template-rows: repeat(2, 150px);  */
+    column-gap: 20px;
+    align-items: center;
+    /* height: 400px; */
+    justify-content: center;
+    /* sacar alturas si se solapa */
+
+
+}
+
+.tay_merch div {
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 2px maroon;
+    font-family: sans-serif;
+}
+
+.tay_merch p {
+    font-size: 1rem;
+
+}
+
+.tay_merch img {
+    height: 150px;
+}
+
+
+
+/* -----------GRID GALERIA----------------- */
+
+
+.grid-galeria {
+    display: grid;
+    grid-template-areas:
+        "img1 img1 img2 img2 "
+        "img3 img4 img4 img5 "
+        "img3 img6 img6 img5 "
+    ;
+    grid-template-rows: repeat(1, 100px);
+    grid-template-columns: repeat(3, 100px);
+
+
+}
+
+.grid-galeria div {
+    overflow: hidden;
+}
+
+.img-1 {
+    grid-area: img1;
+
+
+}
+
+.img-1 img {
+    height: 220%;
+}
+
+.img-2 {
+    grid-area: img2;
+
+
+}
+
+.img-2 img {
+    width: 200%;
+}
+
+.img-3 {
+    grid-area: img3;
+
+}
+
+.img-3 img {
+    height: 220%;
+}
+
+.img-4 {
+    grid-area: img4;
+
+}
+
+.img-4 img {
+    height: 200%;
+
+}
+
+.img-5 img {
+    height: 100%;
+
+}
+
+.img-5 {
+    grid-area: img5;
+
+}
+
+.img-6 {
+    grid-area: img6;
+
+}
+
+.img-6 img {
+    height: 100%;
+
+}
+
+.grid-galeria img {
+    width: 300px;
+}
+
+/* -------------responsive---------- */
+/* mobile last max width */
+
+/* tablet */
+@media (max-width:769px) {
+    h1 {
+        background-color: maroon;
+        color: black;
+
+    }
+
+    .tay_merch {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .tay_merch {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* menu principal */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "links1 logo link2";
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/786358213601312147/F45F553B7D439EB1B74668FA44FF7B18969D9C9C/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.links1 {
+    grid-area: links1;
+}
+
+.logo {
+    grid-area: logo;
+
+}
+
+.logo img {
+    width: 250px;
+}
+
+.link2 {
+    grid-area: link2;
+}
+
+.nav ul,
+.logo {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+a {
+
+    display: inline-block;
+    padding: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: none;
+    color: rgb(10, 10, 60);
+
+}
+
+.main-pf a:link {
+    background-color: none;
+    color: darkslateblue;
+}
+
+.main-pf a:hover {
+    font-weight: bold;
+    padding: 20px;
+    background-color: pink;
+    color: azure;
+    box-shadow: inset;
+}
+
+.main-pf a:active {
+    background-color: yellowgreen;
+}
+
+/* .main-pf div:not(.padre) {
+    background-color: antiquewhite;
+    padding-left: 40px;
+
+} */
+
+@media (max-width:300px) {
+    .grid-galeria {
+        grid-template-areas:
+            "img1" "img2"
+            "img3" "img4"
+            "img5" "img6"
+        ;
+    }
+
+}
+
+
+.text-right {
+    text-align: right important;
+}
+.imagenes-tay{
+    width: 400px;
+}
